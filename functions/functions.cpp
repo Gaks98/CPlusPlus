@@ -20,15 +20,22 @@ double power(double base, int exponent)
   return result;
 }
 
+//function for print power
+void print_power(double base, int exponent)
+{
+  int pow = power(base, exponent);
+  cout << base <<" raised to the " << exponent << " power is " << power(base,exponent)<< endl;
+}
+
 int main()
 {
-  int base, exponent;
+  double base;
+  int exponent;
   cout<< "What is the base? ";
   cin >> base;
   cout << "What is the Exponent? ";
   cin >> exponent;
-  int pow = power(base, exponent);
-  cout << pow << endl;
+  print_power(base,exponent);
 
   return 0;
 }
