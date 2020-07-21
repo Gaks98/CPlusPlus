@@ -5,6 +5,21 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+//custom power method
+double power(double base, int exponent)
+{
+  double result = 1;
+  for (int i = 0; i < exponent; i++)
+  {
+    //using result to continually increase the base value until
+    //it calculates the final result
+    //depending on the exponent value
+    result = result * base;
+  }
+  
+  return result;
+}
+
 int main()
 {
   int base, exponent;
@@ -12,7 +27,8 @@ int main()
   cin >> base;
   cout << "What is the Exponent? ";
   cin >> exponent;
-  int power = pow(base,exponent);
-  cout << power << endl;
+  int pow = power(base, exponent);
+  cout << pow << endl;
+
   return 0;
 }
