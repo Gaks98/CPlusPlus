@@ -21,6 +21,7 @@ double power(double base, int exponent)
 }
 
 //function for print power
+//makes printing the power DRY
 void print_power(double base, int exponent)
 {
   int pow = power(base, exponent);
